@@ -1,0 +1,121 @@
+/* style.css */
+
+/* Genel body ayarları */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* açık gri arka plan */
+}
+
+/* Başlık */
+h1 {
+  font-weight: 700;
+  color: #343a40;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Form Kartı */
+.card {
+  border-radius: 12px;
+  border: none;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+/* Form input ve select */
+#transaction-form input,
+#transaction-form select {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+#transaction-form input:focus,
+#transaction-form select:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #0d6efd;
+}
+
+/* Submit butonu */
+#transaction-form button {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+#transaction-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Özet Kartları */
+#summary .card {
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+#summary .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* İşlem Listesi */
+#transaction-list li {
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 12px 16px;
+  transition: all 0.3s;
+}
+
+#transaction-list li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Gelir ve Gider renkleri */
+.list-group-item-success {
+  background-color: #d1e7dd !important;
+  color: #0f5132;
+}
+
+.list-group-item-danger {
+  background-color: #f8d7da !important;
+  color: #842029;
+}
+
+/* Grafik alanı */
+#chart {
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Filtre alanları */
+.card-body input,
+.card-body select {
+  border-radius: 8px;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  #transaction-form .col-md-2,
+  #transaction-form .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #summary .col-md-4 {
+    margin-bottom: 15px;
+  }
+}
+.delete-btn {
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+}
