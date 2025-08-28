@@ -119,7 +119,6 @@ function getFilteredTransactions() {
       t.category.toLowerCase().includes(searchTerm)
     );
   }
-
   // Kategori filtresi
   if (filterCategory.value !== "all") {
     filtered = filtered.filter(t => t.category === filterCategory.value);
